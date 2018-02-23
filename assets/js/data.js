@@ -3,25 +3,22 @@ const modes = [
     icon: "android-plane",
     title: "Pesawat",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero aliquid eligendi vitae unde."
+      "Sriwijaya Group, Citilink, Lion Group, Malindo Air, Garuda Air, Airasia, dll."
   },
   {
     icon: "android-train",
     title: "Kereta",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti soluta repellendus officiis autem fuga?"
+    description: "Semua kereta PT. KAI."
   },
   {
     icon: "android-boat",
     title: "Kapal",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime harum aliquam amet optio."
+    description: "Semua kapal PT. PELNI."
   },
   {
     icon: "android-bus",
     title: "Bis",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo porro. Illum, tenetur officia."
+    description: "Baraya Travel, Day Trans, Xtrans, Cipaganti, dan Bimo Trans."
   }
 ];
 
@@ -138,19 +135,19 @@ const websites = [
     title: "",
     link: "",
     img: "",
-    type: "agency"
+    type: "profile"
   },
   {
     title: "",
     link: "",
     img: "",
-    type: "agency"
+    type: "profile"
   },
   {
     title: "",
     link: "",
     img: "",
-    type: "agency"
+    type: "profile"
   },
   {
     title: "Contoh Toko Roti",
@@ -190,26 +187,18 @@ const websites = [
   }
 ];
 
-const topup = [
-  "Go-Pay Customer",
-  "Go-Pay Driver",
+const merchants = [
+  "Go-Pay Customer/ Driver",
   "Grab-Pay Customer",
   "Paytren",
   "E-Money Mandiri"
 ];
 
-const cargoFeatures = [
-  "Lorem, ipsum dolor",
-  "Lorem, ipsum dolor",
-  "Lorem, ipsum dolor"
-];
-
 const testimonials = [
   {
-    name: "Restaurant Tiara",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, culpa sint! Ab nihil praesentium saepe voluptates vero reprehenderit repellat facere harum, ipsam ipsum sapiente provident magni sunt enim iure deleniti.",
-    location: "Sempaja"
+    name: "Lorem Ipsum",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque soluta excepturi quia quaerat iusto ullam quae debitis repudiandae tempore a, maiores ipsam amet numquam suscipit ad fugiat, laborum illo?",
+    location: "Dolor"
   }
 ];
 
@@ -236,17 +225,16 @@ const statistics = [
   },
   {
     count: 0,
-    label: "paket terkirim"
+    label: "pelanggan puas"
   }
 ];
 
 export {
-  cargoFeatures,
+  merchants,
   modes,
   ppob,
   providers,
   statistics,
   testimonials,
-  topup,
   websites
 };

@@ -18,7 +18,9 @@
 
         <div class="col-lg-6" data-aos="fade-up">
           <h3 class="h6 text-uppercase mb-3">Latest Tweets</h3>
-          <p>{{ tweet }}</p>
+
+          <p>No tweet yet.</p>
+          <!-- <p>{{ tweet }}</p> -->
         </div>
       </div>
     </div>
@@ -91,7 +93,7 @@ export default {
 
 <style scoped>
 footer {
-  background: url("/img/smd.png") center center no-repeat;
+  background: url("~/assets/img/smd.png") center center no-repeat;
   background-size: cover;
 }
 

@@ -3,8 +3,13 @@
   <div class="container-fluid py-5 text-center">
     <div class="container d-flex flex-column justify-content-between align-items-center mh-50">
       <div class="mb-5" data-aos="zoom-out-up">
-        <h2 class="text-uppercase">Lorem, ipsum dolor.</h2>
-        <p class="mx-auto text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At illo fugit officia ipsam placeat. Nam sapiente ipsa doloribus rerum! Distinctio!</p>
+        <h2 class="text-uppercase">Beli Tiket</h2>
+
+        <ol class="list-unstyled text-muted">
+          <li>Chat kota asal dan tujuan, tanggal berangkat, dan jumlah orang.</li>
+          <li>Tunggu Admin mengecek harga.</li>
+          <li>Transfer ke nomor rekening yang diberikan.</li>
+        </ol>
 
         <i class="h1 icon ion-chevron-down mb-0 text-light"></i>
       </div>
@@ -37,10 +42,21 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .i-wrapper {
   border: 1px dashed #e0e0e0;
   height: 65px;
   width: 65px;
+}
+
+.card {
+  @media (min-width: 768px) and (max-width: 992px) {
+    &:nth-child(2) {
+      order: 1;
+    }
+    &:nth-child(3) {
+      order: 2;
+    }
+  }
 }
 </style>
