@@ -30,7 +30,7 @@ export default {
         { to: "#tiket", label: "Beli Tiket" },
         { to: "#pulsa", label: "Isi Pulsa" },
         { to: "#ppob", label: "Bayar Tagihan" },
-        // { to: "#website", label: "Buat Website" },
+        { to: "#website", label: "Buat Website" },
         { to: "#topup", label: "Topup Saldo" }
       ]
     };
