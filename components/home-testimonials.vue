@@ -2,15 +2,14 @@
 <div class="container-fluid py-5 text-center">
   <div class="container">
     <div data-aos="fade-up-left">
-      <h2 class="text-uppercase">Lorem, ipsum dolor.</h2>
+      <h2 class="text-uppercase">Apa Kata Mereka</h2>
 
-      <p class="mx-auto text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque asperiores quos adipisci consectetur autem itaque officia
-        molestias dolor dolorem ipsam?</p>
+      <p class="mx-auto text-muted">Siap jadi pelanggan puas selanjutnya?</p>
 
       <i class="h2 icon ion-chevron-down mb-0 text-light"></i>
     </div>
 
-    <div class="carousel slide" id="controls" data-ride="carousel" v-cloak>
+    <div class="carousel slide" data-ride="carousel" v-cloak>
       <div class="carousel-inner mx-auto w-75">
         <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
           <img class="avatar hvr-grow img-fluid my-5 rounded-circle" v-bind:src="'img/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name" data-aos="fade-up-right">
@@ -27,16 +26,6 @@
           </blockquote>
         </div>
       </div>
-
-      <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev" data-aos="fade-right">
-        <i class="h3 icon ion-chevron-left text-dark" />
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="carousel-control-next" href="#controls" role="button" data-slide="next" data-aos="fade-right">
-        <i class="h3 icon ion-chevron-right text-dark" />
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 </div>
@@ -62,16 +51,16 @@ export default {
 </script>
 
 <style scoped>
+.avatar {
+  height: 5rem;
+  width: 5rem;
+}
+
 .blockquote-footer::before {
   content: "";
 }
 
 cite span {
   font-style: normal;
-}
-
-.avatar {
-  height: 5rem;
-  width: 5rem;
 }
 </style>

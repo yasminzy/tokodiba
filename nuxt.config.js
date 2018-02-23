@@ -15,7 +15,7 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Roboto:100,400|Shadows+Into+Light"
+          "https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto:100,400"
       },
       {
         rel: "stylesheet",
@@ -43,12 +43,11 @@ module.exports = {
         body: true
       },
       {
-        src:
-          "/tawkto.js"
+        src: "/tawkto.js"
       }
     ]
   },
-  loading: { color: "#e91e63" },
+  loading: { color: "#009688" },
   modules: [
     [
       "@nuxtjs/google-analytics",

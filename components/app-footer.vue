@@ -91,7 +91,7 @@ export default {
 
 <style scoped>
 footer {
-  background: url("/img/smd.png") center center no-repeat;
+  background: url("~/assets/img/smd.png") center center no-repeat;
   background-size: cover;
 }
 

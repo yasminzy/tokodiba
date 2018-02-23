@@ -6,14 +6,12 @@
   <home-ppob />
   <home-website />
   <home-topup />
-  <home-cargo />
   <home-testimonials />
   <home-statistics />
 </div>
 </template>
 
 <script>
-import HomeCargo from "~/components/home-cargo";
 import HomeHeader from "~/components/home-header";
 import HomePhoneCredit from "~/components/home-phone-credit";
 import HomePpob from "~/components/home-ppob";
@@ -25,7 +23,6 @@ import HomeWebsite from "~/components/home-website";
 
 export default {
   components: {
-    HomeCargo,
     HomeHeader,
     HomePhoneCredit,
     HomePpob,
