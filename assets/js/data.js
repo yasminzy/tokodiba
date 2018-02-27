@@ -196,9 +196,9 @@ const merchants = [
 
 const testimonials = [
   {
-    name: "Lorem Ipsum",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque soluta excepturi quia quaerat iusto ullam quae debitis repudiandae tempore a, maiores ipsam amet numquam suscipit ad fugiat, laborum illo?",
-    location: "Dolor"
+    name: "Rochani",
+    content: "Admin cepat respon. Pulsa 50 harga 50.",
+    location: "Samarinda"
   }
 ];
 
@@ -208,7 +208,7 @@ const statistics = [
     label: "transaksi tiket"
   },
   {
-    count: 0,
+    count: "200k",
     label: "pulsa terisi"
   },
   {
@@ -224,7 +224,7 @@ const statistics = [
     label: "topup saldo sukses"
   },
   {
-    count: 0,
+    count: 4,
     label: "pelanggan puas"
   }
 ];
