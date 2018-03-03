@@ -1,10 +1,15 @@
 module.exports = {
   head: {
-    title: "Toko Diba",
+    title: "Toko Diba Samarinda | Chat, transfer, beres.",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Nuxt.js project" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Sedia tiket, pulsa, dan voucher game murah. Bayar tagihan, pesan website, dan topup saldo dengan mudah disini."
+      },
       {
         name: "http-equiv",
         content: "default-src 'self'; font-src 'self' data: fonts.gstatic.com;"
