@@ -208,7 +208,7 @@ const statistics = [
     label: "transaksi tiket"
   },
   {
-    count: "205k",
+    count: "210k",
     label: "pulsa terisi"
   },
   {
