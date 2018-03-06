@@ -2,7 +2,7 @@
 <div class="anchor" id="website">
   <!-- <div class="container-fluid mh-75 py-5 text-center"> -->
   <div class="container-fluid mh-50 d-flex justify-content-center align-items-center py-5 text-center">
-    <div data-aos="flip-right">
+    <div data-aos="fade">
       <h2 class="text-uppercase">Buat Website</h2>
       <ol class="list-unstyled text-muted">
         <li>Chat jenis website</li>
@@ -16,7 +16,7 @@
       <!-- <i class="h2 icon ion-chevron-down mb-0 text-light"></i> -->
     </div>
 
-    <!-- <div class="d-flex justify-content-center my-5" data-aos="flip-left">
+    <!-- <div class="d-flex justify-content-center my-5" data-aos="fade-down">
       <button class="bg-transparent btn text-primary" v-on:click="visibility = 'all'">Semua</button>
       <button class="bg-transparent btn text-primary" v-on:click="visibility = 'profile'">Profil Usaha</button>
       <button class="bg-transparent btn text-primary" v-on:click="visibility = 'ecommerce'">Toko Online</button>
@@ -27,7 +27,7 @@
       <div class="col-md-6 col-lg-4" v-for="(item, index) in filteredWebsites" v-bind:key="index">
         <div class="border-0 card mb-4 w-100">
           <a v-bind:href="item.link">
-            <div class="img-wrapper" data-aos="flip-down">
+            <div class="img-wrapper" data-aos="fade">
               <img class="card-img-top hvr-grow" v-bind:src="'img/' + item.img" v-bind:alt="item.title">
             </div>
           </a>

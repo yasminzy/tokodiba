@@ -1,6 +1,6 @@
 <template>
   <div class="anchor mh-50 row" id="ppob">
-    <div class="bg-light col-md-6 container-fluid p-5" data-aos="slide-right">
+    <div class="bg-light col-md-6 container-fluid p-5" data-aos="fade">
       <div class="d-flex flex-column justify-content-between align-items-center mx-auto content h-100">
         <div>
           <h2 class="text-uppercase">Bayar Tagihan, Pascabayar, Voucher Game, dan Kredit</h2>
@@ -17,7 +17,7 @@
 
     <div class="bg-dark col-md-6 container-fluid p-5 text-white">
       <form class="row justify-content-center align-items-between h-100">
-        <div class="form-group col-lg-6 mb-lg-0" v-for="(item, index) in ppob" v-bind:key="index" data-aos="zoom-in">
+        <div class="form-group col-lg-6 mb-lg-0" v-for="(item, index) in ppob" v-bind:key="index" data-aos="fade-up-right">
           <label v-bind:for="urlize(item.title)">{{ item.title }}</label>
           <select class="form-control" v-bind:id="urlize(item.title)">
             <option v-for="(subitem, index) in ppob[index].type" v-bind:key="index">{{ subitem }}</option>

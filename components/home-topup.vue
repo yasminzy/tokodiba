@@ -2,7 +2,7 @@
 <div class="anchor" id="topup">
   <div class="bg-light container-fluid d-flex align-items-center mh-50 py-5">
     <div class="container mx-auto row">
-      <div class="col-md-6 px-lg-5" data-aos="fade-down-left">
+      <div class="col-md-6 px-lg-5" data-aos="fade">
         <h2 class="text-uppercase">Topup Saldo</h2>
 
         <ol class="text-muted">
@@ -14,7 +14,7 @@
 
       <div class="col-md-6 px-lg-5">
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(item, index) in merchants" v-bind:key="index" data-aos="fade-down-right">
+          <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(item, index) in merchants" v-bind:key="index" data-aos="fade-up">
             {{ item }}
             <span class="badge badge-primary badge-pill">
               <i class="icon ion-checkmark-round"></i>

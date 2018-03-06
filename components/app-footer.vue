@@ -2,8 +2,8 @@
 <footer class="anchor" id="footer">
   <div class="mt-auto text-white w-100">
     <div class="bg container-fluid py-5">
-      <div class="container mx-auto row">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-down">
+      <div class="container mx-auto row" data-aos="fade">
+        <div class="col-lg-6 mb-5 mb-lg-0">
           <h3 class="text-uppercase mb-3">Toko Diba</h3>
 
           <ul class="list-unstyled mb-0">
@@ -16,7 +16,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-6" data-aos="fade-up">
+        <div class="col-lg-6">
           <h3 class="h6 text-uppercase mb-3">Latest Tweets</h3>
 
           <p>No tweet yet.</p>
