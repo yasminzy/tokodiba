@@ -52,21 +52,12 @@ module.exports = {
       }
     ]
   },
-  loading: { color: "#009688" },
-  modules: [
-    [
-      "@nuxtjs/google-analytics",
-      {
-        id: "UA-90535731-4"
-      }
-    ]
-  ],
   css: [
     "aos/dist/aos.css",
     "~/assets/css/global.css",
     "~/assets/css/custom-bootstrap.css"
   ],
-  plugins: [{ src: "~/plugins/aos.js", ssr: false }],
+  loading: { color: "#009688" },
   build: {
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
@@ -78,6 +69,23 @@ module.exports = {
         });
       }
     },
-    vendor: ["aos"]
+    vendor: ["aos", "vue-lazyload"]
+  },
+  modules: [
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-90535731-4"
+      }
+    ]
+  ],
+  plugins: [
+    { src: "~/plugins/aos.js", ssr: false },
+    "~/plugins/vue-lazyload.js"
+  ],
+  router: {
+    scrollBehavior: function(to, from, savedPosition) {
+      return { x: 0, y: 0 };
+    }
   }
 };

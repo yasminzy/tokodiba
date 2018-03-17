@@ -132,8 +132,8 @@ const ppob = [
 
 const websites = [
   {
-    title: "",
-    link: "",
+    title: "TechIQ",
+    link: "http://techiq.io",
     img: "",
     type: "profile"
   },
@@ -151,8 +151,8 @@ const websites = [
   },
   {
     title: "Contoh Toko Roti",
-    link: "https://bakery-azka.netlify.com",
-    img: "bakery-azka.png",
+    link: "https://azka.netlify.com",
+    img: "",
     type: "ecommerce"
   },
   {
@@ -169,8 +169,8 @@ const websites = [
   },
   {
     title: "Contoh Restoran",
-    link: "https://restaurant-tiara.netlify.com",
-    img: "restaurant-tiara.jpg",
+    link: "https://tiara.netlify.com",
+    img: "",
     type: "restaurant"
   },
   {
@@ -212,7 +212,7 @@ const statistics = [
     label: "pulsa terisi"
   },
   {
-    count: 0,
+    count: 2,
     label: "tagihan terbayar"
   },
   {

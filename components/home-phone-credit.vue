@@ -8,7 +8,7 @@
 
     <ul class="d-flex list-unstyled my-5" data-aos="fade-left">
       <li class="mx-2" v-for="(item, index) in providers" v-bind:key="index">
-        <img class="img-fluid rounded-circle" v-bind:src="'img/' + item.toLowerCase()  + '-logo.jpg'" v-bind:alt="item">
+        <img class="img-fluid rounded-circle" v-lazy="'img/' + item.toLowerCase()  + '-logo.jpg'" v-bind:alt="item">
       </li>
     </ul>
 

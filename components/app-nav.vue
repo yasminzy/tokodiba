@@ -1,7 +1,7 @@
 <template>
 <nav class="bg-white navbar fixed-top navbar-expand-lg navbar-light w-100" data-aos="fade-up">
   <nuxt-link class="navbar-brand" to="/">
-    <img class="d-inline-block align-top" src="~/assets/img/logo.png" alt="Logo" width="30" height="30" />
+    <img class="d-inline-block align-top" src="~/assets/img/logo.png" alt="Logo" width="30" height="30"/>
     <span class="font-weight-bold">Toko Diba</span>
   </nuxt-link>
 

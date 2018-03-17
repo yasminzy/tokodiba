@@ -1,13 +1,13 @@
 <template>
 <div>
-  <home-header />
-  <home-ticket />
-  <home-phone-credit />
-  <home-ppob />
-  <home-website />
-  <home-topup />
-  <home-testimonials />
-  <home-statistics />
+  <home-header/>
+  <home-ticket/>
+  <home-phone-credit/>
+  <home-ppob/>
+  <home-website/>
+  <home-topup/>
+  <home-testimonials/>
+  <home-statistics/>
 </div>
 </template>
 

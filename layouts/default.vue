@@ -1,8 +1,8 @@
 <template>
 <div class="d-flex flex-column mh-100">
-  <app-nav />
-  <nuxt data-aos="fade" />
-  <app-footer />
+  <app-nav/>
+  <nuxt data-aos="fade"/>
+  <app-footer/>
 </div>
 </template>
 

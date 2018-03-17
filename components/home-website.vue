@@ -28,7 +28,7 @@
         <div class="border-0 card mb-4 w-100">
           <a v-bind:href="item.link">
             <div class="img-wrapper" data-aos="fade">
-              <img class="card-img-top hvr-grow" v-bind:src="'img/' + item.img" v-bind:alt="item.title">
+              <img class="card-img-top hvr-grow" v-lazy="'img/' + item.img" v-bind:alt="item.title">
             </div>
           </a>
         </div>
