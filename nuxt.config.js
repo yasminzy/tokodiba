@@ -79,10 +79,7 @@ module.exports = {
       }
     ]
   ],
-  plugins: [
-    { src: "~/plugins/aos.js", ssr: false },
-    "~/plugins/vue-lazyload.js"
-  ],
+  plugins: [{ src: "~/plugins/aos", ssr: false }, "~/plugins/vue-lazyload"],
   router: {
     scrollBehavior: function(to, from, savedPosition) {
       return { x: 0, y: 0 };
