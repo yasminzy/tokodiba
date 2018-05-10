@@ -7,7 +7,7 @@
   <home-website/>
   <home-topup/>
   <home-testimonials/>
-  <home-statistics/>
+  <!-- <home-statistics/> -->
 </div>
 </template>
 

@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 module.exports = {
   head: {
     title: "Toko Diba Samarinda | Chat, transfer, beres.",
@@ -30,33 +32,11 @@ module.exports = {
     ],
     script: [
       {
-        src: "https://code.jquery.com/jquery-3.3.1.min.js",
-        integrity: "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",
-        crossorigin: "anonymous",
-        body: true
-      },
-      {
-        src: "https://unpkg.com/popper.js/dist/umd/popper.min.js",
-        body: true
-      },
-      {
-        src:
-          "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
-        integrity:
-          "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl",
-        crossorigin: "anonymous",
-        body: true
-      },
-      {
         src: "/tawkto.js"
       }
     ]
   },
-  css: [
-    "aos/dist/aos.css",
-    "~/assets/css/global.css",
-    "~/assets/css/custom-bootstrap.css"
-  ],
+  css: ["aos/dist/aos.css"],
   loading: { color: "#009688" },
   build: {
     extend(config, { isDev, isClient }) {
@@ -69,7 +49,14 @@ module.exports = {
         });
       }
     },
-    vendor: ["aos", "vue-lazyload"]
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery"
+      })
+    ],
+    vendor: ["aos", "jquery", "bootstrap", "vue-lazyload"]
   },
   modules: [
     [
@@ -79,7 +66,11 @@ module.exports = {
       }
     ]
   ],
-  plugins: [{ src: "~/plugins/aos", ssr: false }, "~/plugins/vue-lazyload"],
+  plugins: [
+    { src: "~/plugins/aos", ssr: false },
+    "~plugins/bootstrap.js",
+    "~/plugins/vue-lazyload"
+  ],
   router: {
     scrollBehavior: function(to, from, savedPosition) {
       return { x: 0, y: 0 };
