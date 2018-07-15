@@ -17,7 +17,7 @@
           <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(item, index) in merchants" v-bind:key="index" data-aos="fade-up">
             {{ item }}
             <span class="badge badge-primary badge-pill">
-              <i class="icon ion-checkmark-round"></i>
+              <i class="icon ion-md-checkmark-circle-outline"></i>
             </span>
           </li>
         </ul>
@@ -40,5 +40,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

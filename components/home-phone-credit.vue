@@ -3,7 +3,7 @@
   <div class="bg-dark container col-md-6 d-flex flex-column justify-content-between align-items-center py-5 text-center text-white">
     <div data-aos="fade">
       <h2 class="text-uppercase">Beli Pulsa</h2>
-      <i class="h2 icon ion-chevron-down mb-0 text-muted"></i>
+      <i class="h2 icon ion-md-arrow-dropdown mb-0 text-muted"></i>
     </div>
 
     <ul class="d-flex list-unstyled my-5" data-aos="fade-left">

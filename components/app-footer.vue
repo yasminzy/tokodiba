@@ -41,23 +41,23 @@ export default {
       tweet: "",
       contact: [
         {
-          icon: "location",
+          icon: "md-locate",
           text: "Jalan Perjuangan Alam Segar II no. 7 Samarinda 75119",
           link:
             "https://www.google.co.id/maps/place/Gang+Alam+Segar+2,+Sempaja+Sel.,+Samarinda+Utara,+Kota+Samarinda,+Kalimantan+Timur+75243/@-0.4622175,117.1543209,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x2df678b13f74d0f9:0xed72e7c4151861ab!2sGang+Alam+Segar+3,+Sempaja+Sel.,+Samarinda+Utara,+Kota+Samarinda,+Kalimantan+Timur+75243!3b1!8m2!3d-0.4616886!4d117.1563817!3m4!1s0x2df678b1310288b9:0x7ada1cacb1562a3e!8m2!3d-0.4622229!4d117.1565096?hl=en"
         },
         {
-          icon: "iphone",
+          icon: "md-phone-portrait",
           text: "085251982080",
           link: "tel:085251982080"
         },
         {
-          icon: "email",
+          icon: "md-mail",
           text: "admin@tokodiba.com",
           link: "mailto:admin@tokodiba.com"
         },
         {
-          icon: "social-twitter",
+          icon: "logo-twitter",
           text: "tokodiba",
           link: "https://twitter.com/tokodiba"
         }

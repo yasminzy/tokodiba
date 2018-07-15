@@ -1,22 +1,22 @@
 const modes = [
   {
-    icon: "android-plane",
+    icon: "md-airplane",
     title: "Pesawat",
     description:
       "Sriwijaya Group, Citilink, Lion Group, Malindo Air, Garuda Air, Airasia, dll."
   },
   {
-    icon: "android-train",
+    icon: "md-train",
     title: "Kereta",
     description: "Semua kereta PT. KAI."
   },
   {
-    icon: "android-boat",
+    icon: "md-boat",
     title: "Kapal",
     description: "Semua kapal PT. PELNI."
   },
   {
-    icon: "android-bus",
+    icon: "md-bus",
     title: "Bis",
     description: "Baraya Travel, Day Trans, Xtrans, Cipaganti, dan Bimo Trans."
   }

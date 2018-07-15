@@ -13,7 +13,7 @@
         <li>Transfer sisa biaya.</li>
       </ol>
 
-      <!-- <i class="h2 icon ion-chevron-down mb-0 text-light"></i> -->
+      <!-- <i class="h2 icon ion-md-arrow-dropdown mb-0 text-light"></i> -->
     </div>
 
     <!-- <div class="d-flex justify-content-center my-5" data-aos="fade-down">
@@ -72,5 +72,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

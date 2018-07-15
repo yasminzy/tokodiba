@@ -11,7 +11,7 @@
           <li>Transfer ke nomor rekening yang diberikan.</li>
         </ol>
 
-        <i class="h1 icon ion-chevron-down mb-0 text-light"></i>
+        <i class="h1 icon ion-md-arrow-dropdown mb-0 text-light"></i>
       </div>
 
       <div class="row">

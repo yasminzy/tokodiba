@@ -10,12 +10,12 @@
       <div>
         <a class="btn btn-primary m-3" href="#tiket">
           Lihat-Lihat
-          <i class="ml-3 icon ion-android-walk"></i>
+          <i class="ml-3 icon ion-md-walk"></i>
         </a>
 
         <a class="btn btn-outline-light m-3" href="#footer">
           Hubungi Kami
-          <i class="ml-2 icon ion-chatbubbles"></i>
+          <i class="ml-2 icon ion-md-chatbubbles"></i>
         </a>
       </div>
     </div>
