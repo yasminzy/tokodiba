@@ -1,9 +1,9 @@
 <template>
-<div class="d-flex flex-column mh-100">
-  <app-nav/>
-  <nuxt data-aos="fade"/>
-  <app-footer/>
-</div>
+  <div class="d-flex flex-column mh-100">
+    <AppNav />
+    <nuxt data-aos="fade" />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -23,6 +23,10 @@ export default {
 
 [v-cloak] {
   display: none;
+}
+
+:root {
+  scroll-behavior: smooth;
 }
 
 ::selection {
