@@ -1,36 +1,38 @@
 const modes = [
   {
-    icon: "md-airplane",
+    icon: "airplane",
     title: "Pesawat",
     description:
-      "Sriwijaya Group, Citilink, Lion Group, Malindo Air, Garuda Air, Airasia, dll."
+      "Lion Group, Malindo Air, Sriwijaya Group, Garuda Air, Citilink, Airasia, dll."
   },
   {
-    icon: "md-train",
+    icon: "train",
     title: "Kereta",
-    description: "Semua kereta PT. KAI."
+    description: "Kereta PT. KAI."
   },
   {
-    icon: "md-boat",
+    icon: "bed",
+    title: "Hotel",
+    description: "Booking hotel se-Indonesia."
+  },
+  {
+    icon: "boat",
     title: "Kapal",
-    description: "Semua kapal PT. PELNI."
+    description: "Kapal PT. PELNI dan ferry."
   },
   {
-    icon: "md-bus",
-    title: "Bis",
-    description: "Baraya Travel, Day Trans, Xtrans, Cipaganti, dan Bimo Trans."
+    icon: "bus",
+    title: "Bus",
+    description: "Bus AKAP dan travel."
+  },
+  {
+    icon: "videocam",
+    title: "Bioskop",
+    description: "Cinema XXI, 21, CGV blitz, dan Cinemaxx."
   }
 ];
 
-const providers = [
-  "Telkomsel",
-  "Indosat",
-  "XL",
-  "Axis",
-  "TRI",
-  "Bolt",
-  "Smartfren"
-];
+const providers = ["Axis", "Indosat", "Smartfren", "Telkomsel", "Three", "XL"];
 
 const ppob = [
   {
@@ -40,48 +42,53 @@ const ppob = [
       "PLN Token",
       "BPJS Kesehatan",
       "PGN",
-      "Telkom/ Indihome",
-      "Speedy",
-      "Telkomvision",
-      "Indovision",
-      "Okevision",
-      "Top TV",
-      "Nexmedia",
+      "TELKOM",
+      "SPEEDY/ INDIHOME",
+      "TELKOMVISION",
+      "TRANSVISION",
+      "FirstMedia",
+      "My Republic",
+      "INDOVISION",
+      "OKEVISION",
+      "TOP TV",
+      "NEXMEDIA",
       "PDAM"
     ]
   },
   {
     title: "Pascabayar",
-    type: ["Halo", "Matrix", "Xplor", "Esia", "Smartfren", "Three"]
+    type: ["Halo", "Matrix", "Xplor", "Smartfren", "Three"]
   },
   {
     title: "Voucher Game",
     type: [
       "Asiasoft",
-      "BSF Voucher",
-      "CC Voucher",
-      "Digicash Voucher",
-      "Facebook Game Card",
-      "Gemscool",
+      "BSF",
+      "CC",
+      "DASA",
+      "Digicash",
       "Gamewave",
       "Gameweb",
-      "GARENA",
-      "Golfonline",
+      "Garena",
+      "Gemscool",
+      "GolfOnline",
       "Kiwicard",
       "Lyto",
       "Megaxus",
-      "Metin 2",
-      "My Card",
-      "Orange Game",
-      "Play Nexia",
+      "Metin",
+      "MyCard",
+      "Orange",
+      "PlayNexia",
       "Qash",
       "Rappelz",
-      "Rose Online",
+      "Rose",
       "Spin",
-      "Steam Gift Card",
-      "Teracord",
+      "Showtime",
+      "Steam",
+      "Tera",
       "Travian",
       "Viwawa",
+      "VTC",
       "Wavegame",
       "Zynga"
     ]
@@ -93,105 +100,22 @@ const ppob = [
       "MAF Finance",
       "MCF Finance",
       "BAF Finance",
-      "WOM Finance",
-      "Adira Finance",
-      "Summit Oto Finance",
-      "Mandiri Tunas Finance",
-      "Kredit Plus Finansia",
-      "ITC Multifinance",
-      "Oto Kredit Mobil Motor",
-      "Columbia",
-      "Mandala Finance",
-      "ACC",
-      "Nissan Finance Service",
-      "Mnc Finance",
-      "Central Santosa Finance",
-      "Almadani",
-      "Varia Intra Finance",
-      "Radana Finance",
-      "Smart Multi Finance",
-      "Trihamas",
-      "MPM Finance",
-      "NSC Finance",
-      "Indomobil Finance",
-      "Artha Prima Finance",
-      "Al Ijarah Indonesia",
-      "Multindo Auto Finance",
-      "Pro Car International Finance",
-      "Pro Mitra Finance",
-      "Arthaasia Finance",
-      "Bima Finance",
-      "Aeon Cicilan",
-      "BFI Finance",
-      "Cimb Niaga Auto Finance",
-      "Suzuki Finance",
-      "Toyota Astra Financial Service"
+      "WOM Finance"
     ]
-  }
-];
-
-const websites = [
-  {
-    title: "TechIQ",
-    link: "http://techiq.io",
-    img: "",
-    type: "profile"
   },
   {
-    title: "",
-    link: "",
-    img: "",
-    type: "profile"
-  },
-  {
-    title: "",
-    link: "",
-    img: "",
-    type: "profile"
-  },
-  {
-    title: "Contoh Toko Roti",
-    link: "https://azka.netlify.com",
-    img: "",
-    type: "ecommerce"
-  },
-  {
-    title: "",
-    link: "",
-    img: "",
-    type: "ecommerce"
-  },
-  {
-    title: "",
-    link: "",
-    img: "",
-    type: "ecommerce"
-  },
-  {
-    title: "Contoh Restoran",
-    link: "https://tiara.netlify.com",
-    img: "",
-    type: "restaurant"
-  },
-  {
-    title: "",
-    link: "",
-    img: "",
-    type: "restaurant"
-  },
-  {
-    title: "",
-    link: "",
-    img: "",
-    type: "restaurant"
+    title: "Pajak",
+    type: ["e-Samsat (khusus Jabar)", "PBB"]
   }
 ];
 
 const merchants = [
   "Go-Pay Customer/ Driver",
-  "Grab-Pay Customer",
-  "Paytren",
-  "E-Money Mandiri"
+  "Grab-Pay Customer (OVO)",
+  "LinkAja",
+  "OVO",
+  "Dana",
+  "Paytren"
 ];
 
 const testimonials = [
@@ -204,37 +128,37 @@ const testimonials = [
 
 const statistics = [
   {
-    count: 0,
-    label: "transaksi tiket"
+    count: 467,
+    label: "pulsa"
   },
   {
-    count: "k",
-    label: "pulsa terisi"
+    count: 29,
+    label: "paket data"
   },
   {
-    count: 0,
-    label: "tagihan terbayar"
+    count: 31,
+    label: "tiket pesawat"
   },
   {
-    count: 0,
-    label: "websites live"
+    count: 6,
+    label: "tiket kereta"
   },
   {
-    count: 0,
-    label: "topup saldo sukses"
+    count: 17,
+    label: "PLN"
   },
   {
-    count: 0,
-    label: "pelanggan puas"
+    count: 14,
+    label: "Telkom"
+  },
+  {
+    count: 17,
+    label: "Gopay"
+  },
+  {
+    count: 7,
+    label: "Grabpay"
   }
 ];
 
-export {
-  merchants,
-  modes,
-  ppob,
-  providers,
-  statistics,
-  testimonials,
-  websites
-};
+export { merchants, modes, ppob, providers, statistics, testimonials };
