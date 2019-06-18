@@ -1,30 +1,42 @@
 <template>
-<div class="anchor" id="topup">
-  <div class="bg-light container-fluid d-flex align-items-center mh-50 py-5">
-    <div class="container mx-auto row">
-      <div class="col-md-6 px-lg-5" data-aos="fade">
-        <h2 class="text-uppercase">Topup Saldo</h2>
+  <div id="topup" class="anchor container-fluid m-0 p-0 row">
+    <div
+      class="bg-dark container col-md-6 d-flex flex-column justify-content-between align-items-center py-5 text-center text-white"
+    >
+      <div
+        class="d-flex flex-column justify-content-between align-items-center mx-auto content h-100"
+      >
+        <div data-aos="fade">
+          <h2 class="text-uppercase">Topup Saldo</h2>
 
-        <ol class="text-muted">
+          <ion-icon class="h2 mb-0 text-muted" name="arrow-dropdown" />
+        </div>
+
+        <ol class="list-unstyled" data-aos="fade-down-right">
           <li>Chat jenis dan nominal topup.</li>
-          <li>Tulis juga nomor HP untuk Gopay dan Grabpay, nomor member untuk Paytren, atau nomor kartu untuk Mandiri.</li>
+          <li>Tulis juga nomor HP/ member.</li>
           <li>Transfer ke nomor rekening yang diberikan.</li>
         </ol>
       </div>
+    </div>
 
-      <div class="col-md-6 px-lg-5">
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center" v-for="(item, index) in merchants" v-bind:key="index" data-aos="fade-up">
-            {{ item }}
-            <span class="badge badge-primary badge-pill">
-              <i class="icon ion-md-checkmark-circle-outline"></i>
-            </span>
-          </li>
-        </ul>
-      </div>
+    <div class="bg-light container col-md-6 p-5">
+      <ul class="list-group">
+        <li
+          v-for="(item, index) in merchants"
+          :key="index"
+          class="list-group-item d-flex justify-content-between align-items-center"
+          data-aos="fade-down-left"
+        >
+          {{ item }}
+
+          <span class="badge badge-primary badge-pill">
+            <ion-icon name="checkmark-circle-outline" />
+          </span>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -38,6 +50,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

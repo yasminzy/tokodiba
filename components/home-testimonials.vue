@@ -1,32 +1,37 @@
 <template>
-<div class="container-fluid py-5 text-center">
-  <div class="container">
-    <div data-aos="fade">
-      <h2 class="text-uppercase">Apa Kata Mereka</h2>
+  <div class="container-fluid py-5 text-center">
+    <div class="container">
+      <div data-aos="fade">
+        <h2 class="text-uppercase">Apa Kata Mereka</h2>
 
-      <p class="mx-auto text-muted">Siap jadi pelanggan puas selanjutnya?</p>
+        <p class="mx-auto text-muted">Siap jadi pelanggan puas selanjutnya?</p>
 
-      <i class="h2 icon ion-md-arrow-dropdown mb-0 text-light"></i>
-    </div>
+        <ion-icon class="h2 mb-0 text-light" name="arrow-dropdown" />
+      </div>
 
-    <div class="carousel slide" data-ride="carousel" v-cloak>
-      <div class="carousel-inner mx-auto w-75">
-        <div class="carousel-item" v-for="(item, index) in testimonials" v-bind:key="index">
-          <blockquote class="blockquote mb-5" data-aos="fade-down-right">
-            <p class="text-muted">{{ item.content }}</p>
+      <div v-cloak class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner mx-auto w-75">
+          <div
+            v-for="(item, index) in testimonials"
+            :key="index"
+            class="carousel-item"
+          >
+            <blockquote class="blockquote mb-5" data-aos="flip-up">
+              <p class="text-muted">{{ item.content }}</p>
 
-            <footer class="blockquote-footer mt-5">
-              <cite>
-                <span class="font-weight-bold">{{ item.name }}</span><br>
-                <small class="cursive">{{ item.location }}</small>
-              </cite>
-            </footer>
-          </blockquote>
+              <footer class="blockquote-footer mt-5">
+                <cite>
+                  <span class="font-weight-bold">{{ item.name }}</span
+                  ><br />
+                  <small class="cursive">{{ item.location }}</small>
+                </cite>
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
