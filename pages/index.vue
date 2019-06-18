@@ -1,14 +1,13 @@
 <template>
-<div>
-  <home-header/>
-  <home-ticket/>
-  <home-phone-credit/>
-  <home-ppob/>
-  <home-website/>
-  <home-topup/>
-  <home-testimonials/>
-  <!-- <home-statistics/> -->
-</div>
+  <div>
+    <HomeHeader />
+    <HomeTicket />
+    <HomePhoneCredit />
+    <HomePpob />
+    <HomeTopup />
+    <HomeTestimonials />
+    <HomeStatistics />
+  </div>
 </template>
 
 <script>
@@ -19,7 +18,6 @@ import HomeStatistics from "~/components/home-statistics";
 import HomeTestimonials from "~/components/home-testimonials";
 import HomeTicket from "~/components/home-ticket";
 import HomeTopup from "~/components/home-topup";
-import HomeWebsite from "~/components/home-website";
 
 export default {
   components: {
@@ -29,12 +27,7 @@ export default {
     HomeStatistics,
     HomeTestimonials,
     HomeTicket,
-    HomeTopup,
-    HomeWebsite
+    HomeTopup
   }
 };
 </script>
-
-<style scoped>
-
-</style>
