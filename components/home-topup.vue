@@ -1,5 +1,5 @@
 <template>
-  <div id="topup" class="anchor container-fluid m-0 p-0 row">
+  <div id="topup" class="anchor container-fluid mh-50 mx-0 px-0 row">
     <div
       class="bg-dark container col-md-6 d-flex flex-column justify-content-between align-items-center py-5 text-center text-white"
     >
