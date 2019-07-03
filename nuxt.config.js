@@ -3,7 +3,7 @@ const webpack = require("webpack");
 export default {
   mode: "universal",
   head: {
-    title: "Toko Diba",
+    title: process.env.npm_package_name || "Toko Diba",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -11,6 +11,7 @@ export default {
         hid: "description",
         name: "description",
         content:
+          process.env.npm_package_description ||
           "Sedia tiket, pulsa, dan voucher game murah. Bayar tagihan, dan topup saldo dengan mudah disini."
       }
     ],
@@ -33,8 +34,11 @@ export default {
       { src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true }
     ]
   },
-  loading: { color: "#009688" },
-  css: ["aos/dist/aos.css"],
+  loading: { color: "#Hex	009688" },
+  css: [
+    "aos/dist/aos.css",
+    { src: "~/assets/scss/custom-bootstrap", lang: "scss" }
+  ],
   plugins: [
     "~/plugins/bootstrap",
     "~/plugins/vue-lazyload",
@@ -42,16 +46,14 @@ export default {
   ],
   modules: [["@nuxtjs/google-analytics", { id: "UA-90535731-4" }]],
   build: {
-    extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
       }
     },
+    extend(config, ctx) {},
     plugins: [
       new webpack.ProvidePlugin({
         $: "jquery",

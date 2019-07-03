@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import AppFooter from "~/components/app-footer";
-import AppNav from "~/components/app-nav";
+import AppFooter from "@/components/app-footer";
+import AppNav from "@/components/app-nav";
 
 export default {
   components: {
@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/custom-bootstrap";
-
 [v-cloak] {
   display: none;
 }
