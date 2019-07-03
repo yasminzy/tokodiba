@@ -28,7 +28,7 @@ export default {
         src: "/tawkto.js"
       },
       {
-        src: "~jquery/dist/jquery.min.js",
+        src: "@jquery/dist/jquery.min.js",
         body: true
       },
       { src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true }
@@ -37,12 +37,12 @@ export default {
   loading: { color: "#Hex	009688" },
   css: [
     "aos/dist/aos.css",
-    { src: "~/assets/scss/custom-bootstrap", lang: "scss" }
+    { src: "@/assets/scss/custom-bootstrap", lang: "scss" }
   ],
   plugins: [
-    "~/plugins/bootstrap",
-    "~/plugins/vue-lazyload",
-    { src: "~/plugins/aos", ssr: false }
+    "@/plugins/bootstrap",
+    "@/plugins/vue-lazyload",
+    { src: "@/plugins/aos", ssr: false }
   ],
   modules: [["@nuxtjs/google-analytics", { id: "UA-90535731-4" }]],
   build: {
